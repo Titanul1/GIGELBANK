@@ -78,12 +78,49 @@
         color: white;
     }
 
+    .sidebar
+    {
+      width: 500px;
+        float: right;
+    }
+
+    .trim
+    {
+      margin: 0px;
+      object-position: top;
+      object-fit: scale-down;
+     /* overflow: hidden;*/
+    }
+
     
+    .left-indent {
+      margin-left: 25%;
+      color: white;
+    }
+
+    .link {
+      text-align: center;
+      color: white;
+      font-style: underline;
+    }
+    .link a {
+      color: white;
+    }
+
+    .button {
+      padding: 10px 30px 10px 30px;
+      color: white;
+      background-color: green;
+    }
+
+    .button:hover {
+      background-color: darkgreen;
+    }
 
     </style>
     </head>
     <body>
-    <div style="position:absolute; left:5px;top:-50px;" class="log"><a href="#"><img  src="GigelBank.png" width="140" height= "140" /></a>
+    <div style="position:absolute; left:5px;top:-50px;" class="log"><a href="#"><img src="GigelBank.png" width="140" height= "140" /></a>
     </div>
     <nav>
       <ul>
@@ -136,9 +173,27 @@
                 <a href="#">Cariere la GigelBank </a>
                 </div>
             </div></li>
-        <li><a href="#" class="top-level"> Contact </a></li>
-        
+        <li><a href="#" class="top-level"> Contact </a></li>        
       </ul>
     </nav>
+    <div class="sidebar">
+    <center><img class="trim" src="Gigel Opaque 2.jpg"></center>
+    <div class="left-indent">
+      <br><br><br>
+      <label for="login-id">Login: &nbsp &nbsp &nbsp  </label>
+      <input type="text" id="login-id" name="login-id">
+    </div>
+    <br>
+    <div class="left-indent">
+      <label for="login-id">Parola: &nbsp &nbsp  </label>
+      <input type="text" id="login-id" name="login-id">
+  </div>
+  <br>
+  <br>
+  <center> <button class="button">Transmite</button></center>
+  <br>
+    <br><br>
+    <div class="link"><a href="#">Nu ai un cont? Inscrie-te! </a></div>
+    </div>
     </body>
     </html>
