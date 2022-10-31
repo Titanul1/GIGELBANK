@@ -18,6 +18,7 @@
       overflow:auto;
     }
     ul {
+      position:fixed; /*am pus fixed aici in loc de nav ca sa nu avem probleme cu toate elementele fiind puse in acelasi loc...*/
       padding: 0;
       margin: 0 0 0 150px;
       list-style:none;
@@ -26,7 +27,6 @@
       float:left;
     }
     .log img{
-    position:absolute;
     margin-top:15px;
     margin-left:10px;
     }
@@ -78,8 +78,11 @@
         color: white;
     }
 
-    .sidebar
-    {
+    .sidebar /* am schimbat sa fie o pozitie fixata sa mereu fie sidebar la dreapta chiar daca facem scroll*/
+    { 
+      position: fixed;
+      right: 0;
+      top: 40px;
       width: 500px;
         float: right;
     }
@@ -120,7 +123,8 @@
     </style>
     </head>
     <body>
-    <div style="position:absolute; left:5px;top:-50px;" class="log"><a href="#"><img src="GigelBank.png" width="140" height= "140" /></a>
+    <div style="position: fixed; left:5px;top:-50px;" class="log"><a href="#"><img src="GigelBank.png" width="140" height= "140" /></a>
+      <!--am schimbat pozitie sa fie fixed in loc de absolut-->
     </div>
     <nav>
       <ul>
@@ -195,5 +199,48 @@
     <br><br>
     <div class="link"><a href="#">Nu ai un cont? Inscrie-te! </a></div>
     </div>
-    </body>
+  <font color="white">
+    <br><br><br><br><br><br><br>
+<br>
+Momentan am pus textul acesta sa testam daca merge bine pozitie fix pentru meniuri si login.
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+
+
+  </font>
+  </body>
     </html>
